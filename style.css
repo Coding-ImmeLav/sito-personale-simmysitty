@@ -1,5 +1,11 @@
+html {
+    /* proprietà che scrolla il sito  */
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+   
 }
 
 header {
@@ -48,6 +54,14 @@ li {
 #menu {
     /* all'inizio non si vede  */
     display: none;
+}
+
+.menu {
+     cursor: pointer; 
+}
+
+.menu-lista > ul > li {
+    text-align: center;
 }
 
 footer {
@@ -111,15 +125,86 @@ footer > div {
 .cv {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* personalizzo il riquadro del curriculum  */
 .curriculum {
-    width: 80%;
+    width: 65%;     
     padding: 20px;
     border: 1px solid black;
 }
 
 .intestazione {
     text-align: center;
+}
+
+.fascia-download {
+    background-color: lightseagreen;
+    width: 100%;
+    height: 10vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottone {
+    background-color: white;
+    color: lightseagreen;
+    font-family: "Boldonse";
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bottone:hover {
+    background-color: lightseagreen;
+    color:white;
+    border: 1px solid white;
+}
+
+.bonus {
+    height: 50vh;
+}
+
+.testo {
+    text-align: center;
+    width: 60%; /* larghezza del div */
+}
+
+.intro-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.relazione-terza {
+    display: flex;
+    background-color: lightsteelblue;
+}
+
+.sx, .dx {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.immagine {
+    width: 80%;
+    padding: 3%;
+}
+
+.relazione-secondo {
+    display: flex;
+    background-color: lightseagreen;
 }
